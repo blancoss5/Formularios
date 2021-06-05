@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>formularios</title>
+    </head>
+    <body>
+        <form action="" enctype="multipart/form-data"> <!--enctype con multipart es para mandar fotos al PHP-->
+            <label for="nombre"> Nombre : </label> <!--for y id se conectaron con nombre-->
+            <input type="text" placeholder="Ingrese su nombre" name="nombre" id="nombre" autocomplete="off" required pattern="[A-Za-z]+"> <br> <!--este es el contenedor-->
+            <label for="contraseña"> Contraseña : </label>
+            <input type="password" placeholder="Ingrese contraseña" name="contraseña" id="contraseña" required><br>
+            <label for="edad"> Edad : </label>
+            <input type="number" placeholder="Ingrese su edad" name="edad" id="edad" required pattern="[0-9]+"> <br>
+            <label for="sexo"> Sexo : </label>
+            <input type="radio" value="Hombre" name="sexo" required checked>  Hombre
+            <input type="radio" value="Mujer" name="sexo" required>  Mujer <br>
+            <label > Conocimientos : </label>
+            <input type="checkbox" checked> Desarrollo web
+            <input type="checkbox"> Desarrollo movil
+            <input type="checkbox"> Consultor de base de datos <br>
+            <label for="fecha">Fecha de nacimiento : </label>
+            <input type="date" id="fecha"> <br>
+            <label for="file"> Foto : </label>
+            <input type="file" id="file"> <br>
+            <br>
+            <label for="nacionalidad"> Nacionalidad : </label>
+            <select name="nacionalidad" id="nacionalidad">
+                <option value="0" selected="selected"> --Seleccione--</option>
+                <option value="Bolivia"> Bolivia</option>
+                <option value="Brasil"> Brasil</option>
+                <option value="argentina"> Argentina</option>
+                <option value="francia">Francia</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="direccion"> Direccion : </label>
+            <textarea name="direccion" id="direccion" cols="30" rows="10" autocomplete="off"></textarea>
+            <!--cols para ancho y rows para largo-->
+            
+            
+            
+            <input type="submit" placeholder="Enviar">
+
+            <br> <br>
+            <label for="seleccion"> Programa seleccionado </label>
+            <select name="programa" id="programa">
+                <optgroup label="Sistemas Operativos">
+                    <option value="windows">Windows</option>
+                    <option value="linux">Linux </option>
+                    <option value="Mac">MAC</option>
+                </optgroup>
+                <optgroup label="Navegadores">
+                    <option value="Internetexplore">Internet Explore</option>
+                    <option value="firefox">Firefox</option> 
+                    <option value="Safari">Safari</option>
+                    <option value="opera">Opera</option>   
+                </optgroup>
+
+            </select>
+
+        </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+        <form action="">
+            <fieldset>
+                <legend>Informacion Adicional</legend> <!--para titulos-->
+                Profesion : <br>
+                <input type="text" placeholder="ingrese su Profesion"><br>
+                Carnet : <br>
+                <input type="text" placeholder="ingrese su carnet"> <br>
+                Correo : <br>
+                <input type="email" placeholder="ingrese su correo"> <br>
+               
+                <input type="range" list="ticks" min="0" max="100" step="10"> <br>
+
+                <datalist id="ticks">
+                    <option value="0">
+                    <option value="10">
+                    <option value="20">
+                    <option value="30">
+                    <option value="40">
+                    <option value="50">
+                    <option value="60">
+                    <option value="70">
+                    <option value="80">
+                    <option value="90">
+                    <option value="100">
+                </datalist>
+
+                <input type="color"> <br>
+                <input type="submit" placeholder="Enviar">
+            </fieldset>
+
+        </form>
+<br><br><br>
+    </body>
+</html>
